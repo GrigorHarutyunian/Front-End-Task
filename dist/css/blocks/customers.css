@@ -1,0 +1,21 @@
+.customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url("../../assets/imgs/BackgroundImage.png");
+  height: auto;
+  background-size: cover;
+  min-height: 1024px;
+}
+.customers .customer_text {
+  max-width: 600px;
+  text-align: center;
+}
+.customers .customer_text h4 {
+  color: #ffffff;
+}
+.customers .customer_text .current_description {
+  color: #ffffff;
+}

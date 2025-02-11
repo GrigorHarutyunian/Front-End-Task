@@ -1,0 +1,23 @@
+@use "../variables" as vars;
+
+.customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url("../../assets/imgs/BackgroundImage.png");
+  height: auto;
+  background-size: cover;
+  min-height: 1024px;
+  .customer_text {
+    max-width: 600px;
+    text-align: center;
+    h4 {
+      color: vars.$white-color;
+    }
+    .current_description {
+      color: vars.$white-color;
+    }
+  }
+}

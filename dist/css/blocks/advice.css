@@ -1,0 +1,51 @@
+.advice {
+  min-height: 717px;
+}
+.advice .advice_background {
+  background: url("../../assets/imgs/BackgroundImage.png");
+  max-height: 477px;
+  background-size: cover;
+}
+.advice .advice_background .advice_container {
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.advice .advice_background .advice_container .advice_video {
+  margin-top: 60px;
+  position: relative;
+}
+.advice .advice_background .advice_container .advice_video .video_play_button .circle {
+  background-color: rgba(255, 255, 255, 0.6588235294);
+  border-radius: 50%; /* Makes it a circle or ellipse */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.advice .advice_background .advice_container .advice_video .video_play_button .circle-50 {
+  width: 50px;
+  height: 50px;
+}
+.advice .advice_background .advice_container .advice_video .video_play_button .circle-60 {
+  width: 60px;
+  height: 60px;
+}
+.advice .advice_background .advice_container .advice_video .video_play_button .circle-70 {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advice .advice_background .advice_container .advice_text {
+  max-width: 600px;
+  text-align: center;
+}
+.advice .advice_background .advice_container .advice_text h4 {
+  color: #ffffff;
+  margin-top: 0px;
+}
+.advice .advice_background .advice_container .advice_text .current_description {
+  color: #ffffff;
+}

@@ -84,7 +84,6 @@ h4 {
   color: #232233;
   margin-bottom: 20px;
   font-weight: 700;
-  margin-top: 100px;
 }
 
 h6 {
@@ -244,7 +243,7 @@ h6 {
   min-height: 964px;
 }
 .about .text {
-  max-width: 675px;
+  max-width: 570px;
 }
 .about .text h4 {
   color: #5956e9;
@@ -287,4 +286,170 @@ h6 {
 .about .features .features_box svg {
   position: absolute;
   left: 20px;
+}
+
+.download {
+  min-height: 706px;
+}
+.download .download_product {
+  justify-content: space-between;
+  align-items: start;
+  padding: 100px 0px 100px 0px;
+}
+.download .download_product .download_content {
+  max-width: 570px;
+}
+.download .download_product .download_content .download_row {
+  margin-top: 60px;
+  display: flex;
+}
+.download .download_product .download_content .download_row a:last-child {
+  margin-left: 24px;
+}
+.download .download_product .download_content h4 {
+  margin-top: 0;
+}
+.download .download_product .download_content .downloads_statistics {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.download .download_product .download_content .downloads_statistics .downloads_statistics_item {
+  background-color: rgba(89, 86, 233, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  max-width: 170px;
+  gap: 14px;
+  width: 100%;
+}
+.download .download_product .download_content .downloads_statistics .downloads_statistics_item span {
+  font-size: 25px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.download .download_product .download_content .downloads_statistics .downloads_statistics_item span:last-child {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.advice {
+  min-height: 717px;
+}
+.advice .advice_background {
+  background: url("../../assets/imgs/BackgroundImage.png");
+  max-height: 477px;
+  background-size: cover;
+}
+.advice .advice_background .advice_container {
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.advice .advice_background .advice_container .advice_video {
+  margin-top: 60px;
+  position: relative;
+}
+.advice .advice_background .advice_container .advice_video .video_play_button .circle {
+  background-color: rgba(255, 255, 255, 0.6588235294);
+  border-radius: 50%; /* Makes it a circle or ellipse */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.advice .advice_background .advice_container .advice_video .video_play_button .circle-50 {
+  width: 50px;
+  height: 50px;
+}
+.advice .advice_background .advice_container .advice_video .video_play_button .circle-60 {
+  width: 60px;
+  height: 60px;
+}
+.advice .advice_background .advice_container .advice_video .video_play_button .circle-70 {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advice .advice_background .advice_container .advice_text {
+  max-width: 600px;
+  text-align: center;
+}
+.advice .advice_background .advice_container .advice_text h4 {
+  color: #ffffff;
+  margin-top: 0px;
+}
+.advice .advice_background .advice_container .advice_text .current_description {
+  color: #ffffff;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.team .team_text {
+  max-width: 600px;
+  text-align: center;
+}
+.team .team_members {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 30px;
+}
+.team .team_members .team_member {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1019607843);
+  padding: 40px 20px 40px 20px;
+  margin-top: 60px;
+}
+.team .team_members .team_member h4 {
+  margin-top: 66px;
+}
+.team .team_members .team_member h6 {
+  color: #6c6c72;
+}
+.team .team_members .team_member p {
+  max-width: 326px;
+}
+.team .team_members .team_member ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+.team .team_members .team_member ul .line {
+  height: 24px;
+  width: 2px;
+  background-color: #6c6c72;
+}
+
+.customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url("../../assets/imgs/BackgroundImage.png");
+  height: auto;
+  background-size: cover;
+  min-height: 1024px;
+}
+.customers .customer_text {
+  max-width: 600px;
+  text-align: center;
+}
+.customers .customer_text h4 {
+  color: #ffffff;
+}
+.customers .customer_text .current_description {
+  color: #ffffff;
 }
