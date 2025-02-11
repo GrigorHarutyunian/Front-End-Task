@@ -1,0 +1,51 @@
+@use "../variables" as vars;
+.download {
+  min-height: 706px;
+
+  .download_product {
+    justify-content: space-between;
+    align-items: start;
+    padding: 100px 0px 100px 0px;
+    .download_content {
+      max-width: 570px;
+      .download_row {
+        margin-top: 60px;
+        display: flex;
+      }
+      .download_row a:last-child {
+        margin-left: 24px;
+      }
+      h4 {
+        margin-top: 0;
+      }
+      .downloads_statistics {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+
+        .downloads_statistics_item {
+          background-color: rgba(vars.$primary-color, 0.8);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          padding-bottom: 30px;
+          padding-top: 30px;
+          max-width: 170px;
+          gap: 14px;
+          width: 100%;
+          span {
+            font-size: 25px;
+            line-height: 25px;
+            color: vars.$white-color;
+          }
+          span:last-child {
+            font-size: 20px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
