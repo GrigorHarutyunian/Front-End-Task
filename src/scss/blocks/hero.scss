@@ -4,6 +4,7 @@
   background: url("../../assets/imgs/BackgroundImage.png");
   height: auto;
   background-size: cover;
+  min-height: 1024px;
   header {
     max-width: 1170px;
     margin: 0px auto;
@@ -85,7 +86,7 @@
   }
 }
 
-.about {
+.support {
   position: relative;
   margin-top: 67px;
 

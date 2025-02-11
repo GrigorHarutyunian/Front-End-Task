@@ -2,6 +2,7 @@
   background: url("../../assets/imgs/BackgroundImage.png");
   height: auto;
   background-size: cover;
+  min-height: 1024px;
 }
 .hero header {
   max-width: 1170px;
@@ -83,11 +84,11 @@
   gap: 30px;
 }
 
-.about {
+.support {
   position: relative;
   margin-top: 67px;
 }
-.about .support_info .frame {
+.support .support_info .frame {
   width: 570px;
   height: 535px;
   border: 18px solid #7572ff;
@@ -96,24 +97,24 @@
   top: 13%;
   left: 50px;
 }
-.about .support_info .support_info_content {
+.support .support_info .support_info_content {
   background-color: #ffffff;
   width: 570px;
   height: 432px;
   position: relative;
   padding: 30px;
 }
-.about .support_info .support_info_content h2 {
+.support .support_info .support_info_content h2 {
   font-size: 48px;
   line-height: 63px;
   margin-bottom: 18px;
   color: #5956e9;
 }
-.about .support_info .support_info_content span {
+.support .support_info .support_info_content span {
   color: #6c6c72;
   line-height: 24px;
 }
-.about .support_info .support_info_content h5 {
+.support .support_info .support_info_content h5 {
   font-size: 25px;
   line-height: 37.5px;
   margin-top: 50px;
@@ -121,12 +122,12 @@
   margin-bottom: 5px;
   color: #232233;
 }
-.about .support_info .support_info_content img {
+.support .support_info .support_info_content img {
   margin-left: 0px;
 }
-.about .support_info .support_info_content .download_row {
+.support .support_info .support_info_content .download_row {
   display: flex;
 }
-.about img {
+.support img {
   margin-left: 174px;
 }

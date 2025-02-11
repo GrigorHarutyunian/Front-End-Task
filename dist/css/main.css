@@ -78,10 +78,34 @@ a {
   align-items: center;
 }
 
+h4 {
+  font-size: 31.25px;
+  line-height: 47.25px;
+  color: #232233;
+  margin-bottom: 20px;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+h6 {
+  color: #232233;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.current_description {
+  line-height: 24px;
+  color: #6c6c72;
+  font-weight: 400;
+}
+
 .hero {
   background: url("../../assets/imgs/BackgroundImage.png");
   height: auto;
   background-size: cover;
+  min-height: 1024px;
 }
 .hero header {
   max-width: 1170px;
@@ -163,11 +187,11 @@ a {
   gap: 30px;
 }
 
-.about {
+.support {
   position: relative;
   margin-top: 67px;
 }
-.about .support_info .frame {
+.support .support_info .frame {
   width: 570px;
   height: 535px;
   border: 18px solid #7572ff;
@@ -176,24 +200,24 @@ a {
   top: 13%;
   left: 50px;
 }
-.about .support_info .support_info_content {
+.support .support_info .support_info_content {
   background-color: #ffffff;
   width: 570px;
   height: 432px;
   position: relative;
   padding: 30px;
 }
-.about .support_info .support_info_content h2 {
+.support .support_info .support_info_content h2 {
   font-size: 48px;
   line-height: 63px;
   margin-bottom: 18px;
   color: #5956e9;
 }
-.about .support_info .support_info_content span {
+.support .support_info .support_info_content span {
   color: #6c6c72;
   line-height: 24px;
 }
-.about .support_info .support_info_content h5 {
+.support .support_info .support_info_content h5 {
   font-size: 25px;
   line-height: 37.5px;
   margin-top: 50px;
@@ -201,12 +225,66 @@ a {
   margin-bottom: 5px;
   color: #232233;
 }
-.about .support_info .support_info_content img {
+.support .support_info .support_info_content img {
   margin-left: 0px;
 }
-.about .support_info .support_info_content .download_row {
+.support .support_info .support_info_content .download_row {
   display: flex;
 }
-.about img {
+.support img {
   margin-left: 174px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 964px;
+}
+.about .text {
+  max-width: 675px;
+}
+.about .text h4 {
+  color: #5956e9;
+}
+.about .features {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.about .features .features_image_section {
+  position: relative;
+}
+.about .features .features_image_section .elipse {
+  width: 212px;
+  height: 71px;
+  background-color: white; /* Change as needed */
+  border-radius: 50%; /* Makes it an ellipse */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1019607843); /* Semi-transparent black shadow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -12px;
+  right: 96px;
+  z-index: -1;
+}
+.about .features .fatures_content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about .features .features_box {
+  max-width: 570px;
+  padding: 30px 20px 16px 60px;
+  text-align: start;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 10px;
+  position: relative;
+}
+.about .features .features_box svg {
+  position: absolute;
+  left: 20px;
 }

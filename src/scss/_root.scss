@@ -1,3 +1,5 @@
+@use "./variables" as vars;
+
 * {
   margin: 0;
   padding: 0;
@@ -53,4 +55,24 @@ a {
   margin: 0px auto;
   display: flex;
   align-items: center;
+}
+h4 {
+  font-size: 31.25px;
+  line-height: 47.25px;
+  color: vars.$black-color;
+  margin-bottom: 20px;
+  font-weight: 700;
+  margin-top: 100px;
+}
+h6 {
+  color: vars.$black-color;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.current_description {
+  line-height: 24px;
+  color: vars.$grey-color;
+  font-weight: 400;
 }
