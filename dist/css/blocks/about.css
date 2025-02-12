@@ -51,3 +51,35 @@
   position: absolute;
   left: 20px;
 }
+
+@media (max-width: 1140px) {
+  .features_image_section {
+    position: relative;
+  }
+  .features_image_section img {
+    width: 193px;
+  }
+  .about .features .features_image_section .elipse {
+    right: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .about {
+    padding-top: 50px;
+  }
+  .about .text {
+    max-width: 300px;
+  }
+  .about .text h4 {
+    font-size: 25px;
+    line-height: 37.5px;
+    margin-bottom: 16px;
+  }
+  .about .features {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .about .features .features_box {
+    max-width: 340px;
+  }
+}

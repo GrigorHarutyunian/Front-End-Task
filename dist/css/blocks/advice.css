@@ -49,3 +49,36 @@
 .advice .advice_background .advice_container .advice_text .current_description {
   color: #ffffff;
 }
+
+@media (max-width: 820px) {
+  .advice img {
+    width: 648px;
+  }
+}
+@media (max-width: 700px) {
+  .advice {
+    min-height: 447px;
+  }
+  .advice .advice_background {
+    max-height: 380px;
+  }
+  .advice .advice_background .advice_container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .advice .advice_background .advice_container .advice_video {
+    margin-top: 20px;
+  }
+  .advice .advice_background .advice_container .advice_video img {
+    width: 300px;
+  }
+  .advice .advice_background .advice_container .advice_text {
+    max-width: 300px;
+    text-align: center;
+  }
+  .advice .advice_background .advice_container .advice_text h4 {
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 37.5px;
+  }
+}

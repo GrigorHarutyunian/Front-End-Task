@@ -75,3 +75,32 @@ h6 {
   color: vars.$grey-color;
   font-weight: 400;
 }
+
+section {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+section.customers,
+section.advice {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media (max-width: 1140px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 820px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 300px;
+  }
+}

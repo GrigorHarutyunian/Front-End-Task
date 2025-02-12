@@ -17,6 +17,9 @@
       display: flex;
       align-items: center;
       margin-top: 18px;
+      .burger_menu {
+        display: none;
+      }
       .nav_left {
         display: flex;
         justify-content: space-evenly;
@@ -49,6 +52,7 @@
           background: white;
           border-radius: 5px;
           width: 200px;
+          box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 10%);
         }
       }
       a {
@@ -91,13 +95,14 @@
   margin-top: 67px;
 
   .support_info {
+    position: relative;
     .frame {
       width: 570px;
       height: 535px;
       border: 18px solid #7572ff;
       position: absolute;
       z-index: 0;
-      top: 13%;
+      top: -50px;
       left: 50px;
     }
     .support_info_content {
@@ -134,5 +139,177 @@
   }
   img {
     margin-left: 174px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .support {
+    justify-content: space-between;
+    img {
+      margin-left: 0px;
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .hero {
+    header {
+      max-width: 960px;
+      .menu {
+        a {
+          font-size: 16px;
+        }
+        .nav_right {
+          gap: 9px;
+          button {
+            padding: 18px 6px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .support {
+      margin-top: 130px;
+      > img {
+        width: 192px;
+      }
+      .support_info {
+        position: relative;
+        .frame {
+          width: 509px;
+          height: 570px;
+        }
+        .support_info_content {
+          width: 500px;
+          height: 480px;
+          padding: 20px;
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .hero {
+    .support {
+      > img {
+        margin-left: 0;
+      }
+      .support_info {
+        position: relative;
+        .frame {
+          width: 308px;
+          height: 358px;
+          border: 10px solid #7572ff;
+          top: -20px;
+          left: 20px;
+        }
+        .support_info_content {
+          width: 312px;
+          height: 317px;
+          padding: 20px;
+          padding-top: 30px;
+
+          h2 {
+            font-size: 25px;
+            line-height: 37.5px;
+            margin-bottom: 18px;
+            font-weight: 600;
+          }
+          span {
+            line-height: 20px;
+          }
+          h5 {
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: vars.$black-color;
+          }
+          .download_row {
+            img {
+              width: 100px;
+              height: 32px;
+            }
+          }
+        }
+      }
+    }
+    header {
+      .menu {
+        a {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    .support {
+      margin-top: 118px;
+      flex-direction: column;
+      gap: 60px;
+    }
+    padding-bottom: 120px;
+    header {
+      .contact_info__header {
+        display: none;
+      }
+      .menu {
+        justify-content: space-between;
+        height: 40px;
+        border-radius: 3px;
+        .burger_menu {
+          display: block;
+          width: 76px;
+          margin-left: 9px;
+        }
+        .nav_left {
+          display: none;
+        }
+        .nav_right {
+          width: auto;
+          a {
+            display: none;
+          }
+          button {
+            width: 76px;
+            height: 34px;
+            font-size: 10px;
+            padding: 0;
+            margin-right: 3px;
+          }
+        }
+        .nav_logo {
+          .nav_logo_child {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 21px;
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 366px) {
+  .hero {
+    .support {
+      .support_info {
+        .frame {
+          width: 264px;
+          height: 439px;
+        }
+        .support_info_content {
+          width: 269px;
+          height: 404px;
+        }
+      }
+    }
   }
 }

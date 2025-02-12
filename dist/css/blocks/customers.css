@@ -52,3 +52,22 @@
 .customers .swiper h4 {
   margin-top: 20px;
 }
+
+@media (max-width: 1120px) {
+  .customers .customer_text {
+    max-width: 370px;
+  }
+}
+@media (max-width: 700px) {
+  .customers .customer_text {
+    max-width: 325px;
+  }
+  .customers .customer_text h4 {
+    font-size: 25px;
+    line-height: 37.5px;
+    margin-bottom: 16px;
+  }
+  .customers .swiper .swiper-slide-active {
+    transform: scale(1);
+  }
+}

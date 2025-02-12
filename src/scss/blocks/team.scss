@@ -42,3 +42,18 @@
     }
   }
 }
+
+@media (max-width: 1120px) {
+  .team {
+    .team_text {
+      max-width: 300px;
+      h4 {
+        font-size: 25px;
+        line-height: 37.5px;
+      }
+    }
+    .team_members {
+      flex-direction: column;
+    }
+  }
+}

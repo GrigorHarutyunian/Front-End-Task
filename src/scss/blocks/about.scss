@@ -56,3 +56,36 @@
     }
   }
 }
+
+@media (max-width: 1140px) {
+  .features_image_section {
+    position: relative;
+    img {
+      width: 193px;
+    }
+  }
+  .about .features .features_image_section .elipse {
+    right: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .about {
+    padding-top: 50px;
+    .text {
+      max-width: 300px;
+      h4 {
+        font-size: 25px;
+        line-height: 37.5px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .features {
+      flex-direction: column;
+      gap: 40px;
+      .features_box {
+        max-width: 340px;
+      }
+    }
+  }
+}

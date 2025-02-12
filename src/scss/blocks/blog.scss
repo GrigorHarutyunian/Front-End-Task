@@ -29,3 +29,40 @@
     }
   }
 }
+
+@media (max-width: 1220px) {
+  .blog {
+    .blog_conteiner {
+      .blog_item {
+        width: 340px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .blog {
+    .blog_text {
+      max-width: 370px;
+      h4 {
+        font-size: 25px;
+        list-style: 37.5px;
+        margin-bottom: 16px;
+      }
+    }
+    .blog_conteiner {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .blog {
+    .blog_conteiner {
+      .blog_item {
+        width: 280px;
+      }
+    }
+  }
+}

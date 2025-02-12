@@ -40,3 +40,16 @@
   width: 2px;
   background-color: #6c6c72;
 }
+
+@media (max-width: 1120px) {
+  .team .team_text {
+    max-width: 300px;
+  }
+  .team .team_text h4 {
+    font-size: 25px;
+    line-height: 37.5px;
+  }
+  .team .team_members {
+    flex-direction: column;
+  }
+}
