@@ -5,6 +5,7 @@
   height: auto;
   background-size: cover;
   min-height: 1024px;
+
   header {
     max-width: 1170px;
     margin: 0px auto;
@@ -17,8 +18,10 @@
       display: flex;
       align-items: center;
       margin-top: 18px;
+
       .burger_menu {
         display: none;
+        cursor: pointer;
       }
       .nav_left {
         display: flex;
@@ -37,6 +40,11 @@
           color: vars.$white-color;
           background-color: vars.$primary-color;
           border-radius: 5px;
+          cursor: pointer;
+          transition: 0.5s all ease;
+        }
+        button:hover {
+          background-color: #5956e9c2;
         }
       }
       .nav_logo {
@@ -140,6 +148,85 @@
   img {
     margin-left: 174px;
   }
+}
+
+#checkbox {
+  display: none;
+}
+#close_mobile_nav {
+  display: none;
+}
+
+.close_label {
+  position: absolute;
+  right: 15px;
+  svg {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+}
+.mobile_nav {
+  height: 100%;
+  width: 40%;
+  background-color: vars.$primary-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 121212;
+  padding: 20px;
+  padding-top: 55px;
+  transform: translate(-300px);
+  transition: 0.4s all ease;
+  box-shadow: 0px 4px 20px 4px rgb(39 37 176);
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    h6 {
+      color: vars.$white-color;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px;
+      border-radius: 5px;
+      color: vars.$primary-color;
+      cursor: pointer;
+      transition: 0.5s all ease;
+    }
+    button:hover {
+      background-color: vars.$primary-color;
+      color: vars.$white-color;
+    }
+    .a_line {
+      background: vars.$white-color;
+    }
+  }
+}
+
+#checkbox:checked ~ .mobile_nav {
+  transform: translate(0px);
+}
+#checkbox:not(:checked) ~ .mobile_nav {
+  transform: translate(-300px);
+}
+
+header .nav_right a:hover,
+header .nav_left a:hover {
+  color: vars.$primary-color;
+
+  transition: 0.2s all ease-in;
+}
+header a:hover .a_line {
+  width: 100%;
+}
+.a_line {
+  margin-top: -2px;
+  height: 3px;
+  width: 0%;
+  background: vars.$primary-color;
+  transition: 0.2s all ease-in;
 }
 
 @media (max-width: 1200px) {
@@ -311,5 +398,24 @@
         }
       }
     }
+  }
+  .mobile_nav {
+    ul {
+      h6 {
+        color: vars.$white-color;
+        font-size: 12px;
+      }
+      button {
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .mobile_nav {
+    display: none;
   }
 }

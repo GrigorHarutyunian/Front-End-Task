@@ -12,7 +12,8 @@
 />
   </head>
   <body>
-    <section class="hero">
+    <section id="hero" class="hero">
+      
       <header>
         <div class="contact_info__header">
           <div class="contact_details">
@@ -81,17 +82,60 @@
           </ul>
         </div>
         <nav class="menu">
+          <input type="checkbox" id="checkbox">
+           
+          <label for="checkbox" class="menu-btn">
           <div class="burger_menu">
-            <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="#232233"/>
+            <svg width="34" height="20" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path  width="34" height="20" d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="#232233"/>
+              
               </svg>
               
           </div>
+        </label>
+        <div class="mobile_nav">
+        
+          <label for="checkbox" class="close_label">
+            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon" width="18" height="18"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+          </label>
          
+          <ul>
+            
+            
+            <li><a  href="#hero"><h6>HOME <div class="a_line">
+                
+            </div></h6></a></li>
+          <li><a  href="#about"><h6>ABOUT <div class="a_line">
+                
+          </div></h6></a></li>
+          <li><a  for="close-menu" href="#download"><h6>SCREENSHOTS <div class="a_line">
+                
+          </div></h6></a></li>
+          <li><a  for="close-menu"  href="#team"><h6>FEATURES <div class="a_line">
+                
+          </div></h6></a></li>
+          <li><a  href="#blog"><h6>BLOG <div class="a_line">
+                
+          </div></h6></a></li>
+          <button>DOWNLOAD</button>
+
+        </div>
           <div class="nav_left">
-            <a href="">HOME</a>
-            <a href="">ABOUT</a>
-            <a href="">FEATURES</a>
+            <a href="#hero">HOME
+              <div class="a_line">
+                
+              </div>
+            </a>
+            <a href="#about">ABOUT
+              <div class="a_line">
+                
+              </div>
+            </a>
+            <a href="#download">FEATURES
+              <div class="a_line">
+                
+              </div>
+            </a>
           </div>
           <div class="nav_logo">
             <div class="nav_logo_child">
@@ -128,8 +172,16 @@
           </div>
 
           <div class="nav_right">
-            <a href="">SCREENSHOT</a>
-            <a href="">BLOG</a>
+            <a href="#team">SCREENSHOT
+              <div class="a_line">
+                
+              </div>
+            </a>
+            <a href="#blog">BLOG
+              <div class="a_line">
+                
+              </div>
+            </a>
             <button>DOWNLOAD</button>
           </div>
           
@@ -160,7 +212,7 @@
         <img src="./assets/imgs/FreeUiViewMobileAppMockup.png" alt="" />
       </div>
     </section>
-    <section class="about">
+    <section  id="about"class="about">
       <div class="text">
         <h4>ABOUT OUR APP</h4>
         <span class="current_description">
@@ -230,7 +282,7 @@
       </div>
     </section>
 
-    <section class="download">
+    <section  id="download" class="download">
       <div class="container download_product">
         <div class="download_content">
           <h4>DOWNLOAD APP NOW</h4>
@@ -274,7 +326,7 @@
       <img src="./assets/imgs/12Mockup.png" alt="">
       </div>
     </section>
-    <section class="advice">
+    <section id="advice" class="advice">
       <div class="advice_background"> 
       
       <div class="container advice_container">
@@ -302,7 +354,7 @@
       </div>
     </div>
     </section>
-    <section class="team">
+    <section id="team" class="team">
       <div class="team_text">
         <h4>OUR REATIVE TEAM</h4>
         <span class="current_description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</span>
@@ -440,7 +492,7 @@
         </div>
       </div>
     </section>
-    <section class="customers">
+    <section  id="customers"class="customers">
       <div class="customer_text">
         <h4>OUT HAPPY CUSTOMERS</h4>
         <p class="current_description">
@@ -603,7 +655,7 @@
     </div>
 
     </section>
-    <section class="blog">
+    <section id="blog" class="blog">
       <div class="blog_text">
         <h4>OUR RECENT BLOG</h4>
         <p class="current_description">
@@ -728,10 +780,10 @@
         <div class="footer_quick_links">
           <h4>QUICK LINK</h4>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Screenshot</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#download">Features</a></li>
+            <li><a href="#team">Screenshot</a></li>
+            <li><a href="#blog">Blog</a></li>
           </ul>
         </div>
         <div class="footer_news_letter">
