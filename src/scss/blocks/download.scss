@@ -35,6 +35,9 @@
           max-width: 170px;
           gap: 14px;
           width: 100%;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
           span {
             font-size: 25px;
             line-height: 25px;
@@ -45,6 +48,9 @@
             line-height: 30px;
           }
         }
+        .downloads_statistics_item:hover {
+          background-color: rgba(88, 86, 233, 0.562);
+        }
       }
     }
   }
@@ -53,6 +59,47 @@
 @media (max-width: 1140px) {
   .download_product > img {
     width: 340px;
+  }
+}
+
+@media (max-width: 920px) {
+  .download
+    .download_product
+    .download_content
+    .downloads_statistics
+    .downloads_statistics_item {
+    max-width: 129px;
+    gap: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    span {
+      font-size: 17px;
+      line-height: 20px;
+    }
+    span:last-child {
+      font-size: 15px;
+      line-height: 15px;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .download
+    .download_product
+    .download_content
+    .downloads_statistics
+    .downloads_statistics_item {
+    max-width: 100px;
+    gap: 6px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+    span:last-child {
+      font-size: 13px;
+      line-height: 15px;
+    }
   }
 }
 
@@ -107,7 +154,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
   .download
     .download_product
     .download_content

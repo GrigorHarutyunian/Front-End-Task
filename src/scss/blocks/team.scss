@@ -21,6 +21,39 @@
       margin-top: 60px;
       transition: all 0.3s ease;
       border-radius: 10px;
+      cursor: pointer;
+      .circle-container {
+        position: relative;
+        display: inline-block;
+      }
+      .circle-container::before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: calc(100% + 8px);
+        top: -6px;
+        left: -8px;
+        border-radius: 105px;
+        border: 4px solid vars.$primary-color;
+
+        mask: conic-gradient();
+        -webkit-mask: conic-gradient(
+          #5956e9 65deg 12deg,
+          #00000000 3deg 88deg,
+          #5956e9 83deg 158deg,
+          transparent 46deg 180deg,
+          #5956e9 178deg 247deg,
+          #00000000 200deg 265deg,
+          #5956e9 269deg 343deg,
+          transparent 290deg 350deg
+        );
+        animation: spin 10s linear infinite;
+      }
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
       h4 {
         margin-top: 66px;
       }
@@ -46,8 +79,10 @@
         }
       }
     }
+
     .team_member:hover {
       box-shadow: 0px 4px 10px rgb(0 0 0 / 65%);
+      transform: translateY(-10px);
     }
   }
 }

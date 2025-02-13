@@ -79,6 +79,10 @@
   display: flex;
   align-items: center;
 }
+.contact_info__header .contact_details a:hover path {
+  fill: #6c6c72;
+  transition: all 0.3s ease;
+}
 .contact_info__header .contact_details .contact_item {
   display: flex;
   align-items: center;
@@ -92,6 +96,10 @@
   display: flex;
   align-items: center;
   gap: 30px;
+}
+.contact_info__header .social_links a:hover path {
+  fill: #6c6c72;
+  transition: all 0.3s ease;
 }
 
 .support {
@@ -248,7 +256,7 @@ header a:hover .a_line {
   }
   .hero header .menu .nav_right button {
     padding: 18px 6px;
-    font-size: 15px;
+    font-size: 13px;
   }
   .hero .support {
     margin-top: 130px;

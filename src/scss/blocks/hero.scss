@@ -81,6 +81,10 @@
   .contact_details {
     display: flex;
     align-items: center;
+    a:hover path {
+      fill: vars.$grey-color;
+      transition: all 0.3s ease;
+    }
     .contact_item {
       display: flex;
       align-items: center;
@@ -95,6 +99,11 @@
     display: flex;
     align-items: center;
     gap: 30px;
+
+    a:hover path {
+      fill: vars.$grey-color;
+      transition: all 0.3s ease;
+    }
   }
 }
 
@@ -250,7 +259,7 @@ header a:hover .a_line {
           gap: 9px;
           button {
             padding: 18px 6px;
-            font-size: 15px;
+            font-size: 13px;
           }
         }
       }
